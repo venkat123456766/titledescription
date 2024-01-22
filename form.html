@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            width: 100%;
+            height: 100px;
+            background-color: gray;
+            border-radius: 30px;
+        }
+        #d{
+            border-radius: 25px;
+            display: inline-block;
+            width: 480px;
+            height: 20px;
+        }
+        #dat{
+            position: relative;
+            left: 900px;
+            display: inline-block;
+            height: 25px;
+        }
+        #e{
+            border-radius: 25px;
+            display: inline-block;
+            width: 1000px;
+            height: 40px;
+        }
+        #f{
+            position: relative;
+            left: 400px;
+            
+            display: inline-block;
+            width: 70px;
+            border-radius: 25px;
+        }
+        #main1{
+            width: 100%;
+            height: 100px;
+            background-color: gray;
+        }
+        #sub{
+            position: relative;
+            left: 1400px;
+            top: 20px;
+           
+            
+        }
+        #list{
+                list-style: none;
+                display: flex;
+            }
+            .sli{
+                width: 100px;
+                position: relative;
+                right: 10px;
+                top: 15px;
+                text-align: left;
+                font-size: 25px;
+            }
+            .sli:hover{
+                background-color: gray;
+            }
+       
+       
+       
+       
+    </style>
+</head>
+<body>
+    <div id="main">
+        <br>
+    
+    
+        <form>
+    
+            <input placeholder="Tittle" id="d">
+            <input type="date" min="2024-01-22"id="dat"> <br>
+            <input placeholder="description" value="Description" id="e">
+            <input type="button" id="f" value="save" onclick="save()">
+            </form>
+            </div>
+            <br>
+
+            
+            <div>
+                <ul id="list">
+                    <li class="sli">SUN</li>
+                    <li class="sli">MON</li>
+                    <li class="sli">TUE</li>
+                    <li class="sli">WED</li>
+                    <li class="sli">THU</li>
+                    <li class="sli">FRI</li>
+                    <li class="sli">SAT</li>
+                </ul>
+            </div>
+            <div id="main1">
+                <h1 id="heading"></h1>
+                <h2 id="des"></h2>
+                <input type="button" value="DELETE" id="sub" onclick="delet()">
+            </div>
+            
+            <script>
+                function save(){
+                    var a=document.getElementById("d").value
+                    var b=document.getElementById("e").value
+                    document.getElementById("heading").innerHTML=a
+                    document.getElementById("des").innerHTML=b
+
+                }
+                function delet(){
+                    document.getElementById("heading").style.display="none"
+                    document.getElementById("des").style.display="none"
+                }
+                
+
+
+
+
+                </script>
+            
+       
+    
+    
+</body>
+</html>
+
